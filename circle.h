@@ -21,3 +21,31 @@ class circle{
   protected :
     double getDistance();
 }
+
+template <typename Type>
+void circle<Type>::populate_classObj(Type a, Type b, Type c, Type d){
+  x1 = a;
+  y1 = b;
+  x2 = c;
+  y2 = d;
+}
+
+template <typename Type>
+double circle<Type>::getDistance(){
+  return sqrt( ((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)) );
+}
+
+template <typename Type>
+double circle<Type>::getRadius(){
+  return getDistance();
+}
+
+template <typename Type>
+double circle<Type>::getCircumference(){
+  return(2*PI*getRadius());
+}
+
+template <typename Type>
+double circle<Type>::getArea(){
+  return(PI*getRadius()*getRadius());
+}
