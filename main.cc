@@ -1,6 +1,3 @@
-//Sarah Pampalone
-//ECE 2620 001
-
 #include <iostream>
 #include <cstdio>
 #include <cmath>
@@ -12,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	double a = -1.5;
+	double a = -1.5;	//test points
 	double b = -6.65;
 	double c = -0.5;
 	double d = 10.0;
